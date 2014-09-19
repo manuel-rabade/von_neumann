@@ -11,28 +11,28 @@ II](http://www.altera.com/support/software/sof-maxplus2.html) y
 validarlo en el FPGA de una tarjeta de desarrollo
 [Altera](http://www.altera.com/).
 
-Instrucciónes implementadas
----------------------------
+Lenguaje ensamblador
+--------------------
 
-### LDA #opr
+**LDA #opr**
 
 - Opcode: 10
 - Tamaño: 2 bytes
 - Función: Carga el valor inmediato a la instrucción en el registro A.
 
-### SUMA #opr
+**SUMA #opr**
 
 - Opcode: 20
 - Tamaño: 2 bytes
 - Función: Suma el valor inmediato a la instrucción al valor en el registro A.
 
-### SHA
+**SHA**
 
 - Opcode: 40
 - Tamaño: 1 byte
 - Función: Corrimiento a la derecha del valor en el registro A.
 
-### BNZ addr
+**BNZ addr**
 
 - Opcode: 30
 - Tamaño: 2 bytes
