@@ -7,8 +7,8 @@ Nacional Autónoma de México](http://unam.mx).
 
 El objetivo de este proyecto es implementar un microprocesador de tipo
 Von Neumann en lenguaje VDHL dentro del entorno [MAX+PLUS
-II](http://www.altera.com/support/software/sof-maxplus2.html) para
-validar el diseño en el FPGA de una tarjeta de desarrollo
+II](http://www.altera.com/support/software/sof-maxplus2.html) y
+validarlo en el FPGA de una tarjeta de desarrollo
 [Altera](http://www.altera.com/).
 
 Instrucciónes implementadas
@@ -16,35 +16,27 @@ Instrucciónes implementadas
 
 ### LDA #opr
 
-Opcode: 10
-
-Tamaño: 2 bytes
-
-Carga el valor inmediato a la instrucción en el registro A.
+- Opcode: 10
+- Tamaño: 2 bytes
+- Función: Carga el valor inmediato a la instrucción en el registro A.
 
 ### SUMA #opr
 
-Opcode: 20
-
-Tamaño: 2 bytes
-
-Suma el valor inmediato a la instrucción al valor en el registro A.
+- Opcode: 20
+- Tamaño: 2 bytes
+- Función: Suma el valor inmediato a la instrucción al valor en el registro A.
 
 ### SHA
 
-Opcode: 40
-
-Tamaño: 1 byte
-
-Corrimiento a la derecha del valor en el registro A.
+- Opcode: 40
+- Tamaño: 1 byte
+- Función: Corrimiento a la derecha del valor en el registro A.
 
 ### BNZ addr
 
-Opcode: 30
-
-Tamaño: 2 bytes
-
-Ramifica a la dirección de memoría inmediata a la instrucción en caso
+- Opcode: 30
+- Tamaño: 2 bytes
+- Función: Ramifica a la dirección de memoría inmediata a la instrucción en caso
 de que el valor en el registro A sea diferente a cero.
 
 Programa de prueba
@@ -59,7 +51,7 @@ ciclo-2	: SHA
           BNZ ciclo-2
 ```
 
-Y su codificación en la memoria de programa:
+Codificación en la memoria de programa:
 
 Dirección | Valor | Ensamblador
 --------- | ----- | -----------
