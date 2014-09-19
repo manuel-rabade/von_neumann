@@ -1,9 +1,9 @@
 Microprocesador Von Neumann en VHDL
 ===================================
 
-Proyecto final de mi curso _Arquitectura de Computadoras_ en la
-[Facultad de Ingeniería](http://ingenieria.unam.mx/) de la [Uniersidad
-Nacional Autonoma de México](http://unam.mx/).
+Proyecto final de mi curso **Arquitectura de Computadoras** en la
+[Facultad de Ingeniería](http://ingenieria.unam.mx) de la [Universidad
+Nacional Autónoma de México](http://unam.mx).
 
 El objetivo de este proyecto es implementar un microprocesador de tipo
 Von Neumann en lenguaje VDHL dentro del entorno [MAX+PLUS
@@ -14,24 +14,36 @@ validar el diseño en el FPGA de una tarjeta de desarrollo
 Instrucciónes implementadas
 ---------------------------
 
-**LDA #opr**
+### LDA #opr
+
 Opcode: 10
+
 Tamaño: 2 bytes
+
 Carga el valor inmediato a la instrucción en el registro A.
 
-**SUMA #opr**
+### SUMA #opr
+
 Opcode: 20
+
 Tamaño: 2 bytes
+
 Suma el valor inmediato a la instrucción al valor en el registro A.
 
-**SHA**
+### SHA
+
 Opcode: 40
+
 Tamaño: 1 byte
+
 Corrimiento a la derecha del valor en el registro A.
 
-**BNZ addr**
+### BNZ addr
+
 Opcode: 30
+
 Tamaño: 2 bytes
+
 Ramifica a la dirección de memoría inmediata a la instrucción en caso
 de que el valor en el registro A sea diferente a cero.
 
@@ -47,7 +59,7 @@ ciclo-2	: SHA
           BNZ ciclo-2
 ```
 
-### Codificación del programa de prueba
+Y su codificación en la memoria de programa:
 
 Dirección | Valor | Ensamblador
 --------- | ----- | -----------
