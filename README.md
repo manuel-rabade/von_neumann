@@ -6,10 +6,13 @@ la [Facultad de Ingeniería](http://ingenieria.unam.mx) de la
 [Universidad Nacional Autónoma de México](http://unam.mx).
 
 El objetivo de este proyecto es implementar un microprocesador de tipo
-Von Neumann en lenguaje VHDL dentro del entorno [MAX+PLUS
+[Von Neumann](http://es.wikipedia.org/wiki/Arquitectura_de_von_Neumann)
+en [lenguaje VHDL](http://es.wikipedia.org/wiki/VHDL) dentro del
+entorno [MAX+PLUS
 II](http://www.altera.com/support/software/sof-maxplus2.html) y
-validarlo en el FPGA de una tarjeta de desarrollo
-[Altera](http://www.altera.com/).
+validarlo en el
+[FPGA](http://es.wikipedia.org/wiki/Field_Programmable_Gate_Array) de
+una tarjeta de desarrollo [Altera](http://www.altera.com/).
 
 Lenguaje ensamblador
 --------------------
@@ -42,7 +45,7 @@ de que el valor en el registro A sea diferente a cero.
 Programa de prueba
 ------------------
 
-```
+```assembly
           LDA #226
 ciclo-1	: SUMA #5
           BNZ ciclo-1
