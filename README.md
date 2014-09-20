@@ -45,7 +45,7 @@ de que el valor en el registro A sea diferente a cero.
 Programa de prueba
 ------------------
 
-```assembly
+```nasm
           LDA #226
 ciclo-1	: SUMA #5
           BNZ ciclo-1
